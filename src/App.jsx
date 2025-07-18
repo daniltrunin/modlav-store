@@ -1,7 +1,9 @@
 import './App.css'
 import './variables.css'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import HomeView from "./views/HomeView/HomeView.jsx";
+import {useEffect, useState} from "react";
+import HomeView from "./views/Desktop/HomeView/HomeView.jsx";
+import MobileHomeView from "./views/Mobile/MobileHomeView/MobileHomeView.jsx";
 
 /*
 Для адаптива мы можем определять наш UI является Mobile или Desktop
@@ -10,13 +12,24 @@ import HomeView from "./views/HomeView/HomeView.jsx";
 */
 
 function App() {
+    const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setInnerWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<HomeView/>}/>
+                <Route
+                    path="/"
+                    element={innerWidth < 768 ? <MobileHomeView/> : <HomeView/>}
+                />
             </Routes>
         </BrowserRouter>
-    )
+    );
 }
 
-export default App
+export default App;

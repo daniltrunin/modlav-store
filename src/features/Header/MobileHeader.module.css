@@ -1,0 +1,109 @@
+/*Header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 4.8rem;
+    max-height: 4.8rem;
+    width: 100%;
+
+    padding: 0 1.6rem;
+
+    border-bottom: 1px solid var(--border-line-color);
+}
+
+/*Основное меню хедера*/
+
+.mobile-controls {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+/*Бургер меню*/
+
+.close-burger {
+    background-color: rgba(255, 0, 0, 0.30);
+
+    width: 100%;
+    padding: 5rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 0, 0, 0.60);;
+    }
+}
+
+.burger-open-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.burger-open-inactive {
+    display: none;
+}
+
+.burger-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 100%;
+}
+
+.controls-item {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.4rem;
+
+    padding: 5rem 0;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--background-color-hover);
+    }
+}
+
+.controls-item--active {
+    color: var(--font-color-active);
+
+    &:hover {
+        background-color: transparent;
+    }
+}
