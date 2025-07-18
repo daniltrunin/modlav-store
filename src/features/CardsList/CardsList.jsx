@@ -1,14 +1,9 @@
 import styles from '../CardsList/CardList.module.css'
 import {useSelector} from "react-redux";
-import {useEffect} from "react";
 import CardListItem from '../CardListItem/CardListItem.jsx'
 
 export default function CardsList() {
     const products = useSelector((state) => state.content.products)
-
-    useEffect(() => {
-        console.log(products)
-    }, [products]);
 
     return (
         <div className={styles.container}>

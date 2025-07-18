@@ -39,7 +39,13 @@
 }
 
 .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 1.2rem;
+
+    height: 9.7rem;
 
     border-bottom: 0.1rem solid var(--border-line-color);
 }
@@ -87,6 +93,8 @@
 
     padding: 1.2rem;
 
+    height: 4rem;
+
     border-bottom: 0.1rem solid var(--border-line-color);
 
     display: flex;
@@ -106,6 +114,8 @@
     color: var(--font-color-primary);
 
     padding: 1.2rem;
+
+    height: 4rem;
 
     display: flex;
     align-items: center;

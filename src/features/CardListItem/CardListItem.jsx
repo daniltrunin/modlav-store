@@ -1,8 +1,7 @@
 import styles from './CardListItem.module.css'
 import {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {toggleFavorite} from '../Header/HeaderSlice.js'
-// import image from '../../assets/images/CardListItemPicture.png'
 import favorites from '../../assets/icons/FavoritesButton.svg'
 
 export default function CardListItem({title, tag, price, sizes, color, image}) {
@@ -32,7 +31,7 @@ export default function CardListItem({title, tag, price, sizes, color, image}) {
                     <h1 className={styles.title}>{title}</h1>
                     <div className={styles['price-wrapper']}>
                         {tag ? <div className={styles.tag}>{tag}</div> : ''}
-                        <div>{price} $</div>
+                        <div>{price * 100} р.</div>
                     </div>
                 </div>
 
