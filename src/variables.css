@@ -1,0 +1,23 @@
+:root {
+    --font-color-primary: #0D0D0D;
+    --font-color-active: #E62F4D;
+
+    --border-line-color: #D6D6D6;
+
+    --background-color-hover: rgb(239, 239, 239);
+
+    --background-color-option: #F2F2F2;
+
+    --toggle-background-color-enabled: #01d301;
+    --toggle-background-color-disabled: white;
+    --toggle-dot-color-enabled: white;
+    --toggle-dot-color-disabled: #828282;
+
+    --tag-font-color: white;
+    --tag-background-color-new: #E62F4D;
+
+    --background-color-favorites-button-active: #01d301;
+    --background-color-favorites-button-inactive: #E62F4D;
+
+    --background-color-favorites-button-hover: rgba(230, 47, 77, 0.77);
+}

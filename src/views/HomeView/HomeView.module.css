@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-areas:
+'aside header'
+'aside content'
+'aside footer';
+    height: 100vh;
+    grid-template-columns: 227px 1213px;
+    /*Колонки такие, чтобы на десктопе итоговая ширина была 1440px*/
+
+    /*padding-bottom: 17.6rem;*/
+}
