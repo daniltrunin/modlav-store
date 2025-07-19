@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+
+    grid-template-areas:
+'header'
+'products-details'
+'similar'
+'ads'
+'newsletter'
+'footer';
+}

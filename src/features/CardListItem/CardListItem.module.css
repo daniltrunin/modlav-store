@@ -5,16 +5,23 @@
     border: 0.1rem solid var(--border-line-color);
 
     max-width: 26.8rem;
+    max-height: 60.7rem;
 }
 
 .image-wrapper {
     position: relative;
+
+    width: 100%;
+    height: 100%;
 
     max-width: 26.8rem;
     max-height: 42.7rem;
 }
 
 .image {
+    width: 100%;
+    height: 100%;
+
     max-width: 26.8rem;
     max-height: 42.7rem;
 }
@@ -105,7 +112,7 @@
     column-gap: 0.8rem;
 }
 
-.size-wrapper span {
+.size-wrapper__name {
     color: #4F4F4F;
 }
 
@@ -132,24 +139,34 @@
 @media (max-width: 768px) {
     .container {
         max-width: 16.8rem;
+        max-height: 50rem;
     }
 
     .image-wrapper {
         max-width: 16.8rem;
-        max-height: 26.8rem;
+        max-height: 16.8rem;
     }
 
     .image {
-        max-width: 16.8rem;
-        max-height: 26.8rem;
+        max-width: 16.6rem;
+        max-height: 16.6rem;
+    }
+
+    .heading {
+        height: 12rem;
     }
 
     .size-wrapper {
-        overflow-x: scroll;
-
-        max-height: 4rem;
+        overflow-x: auto;
+        overflow-y: hidden;
 
         white-space: nowrap;
+
+        scrollbar-gutter: stable both-edges;
+    }
+
+    .color-wrapper {
+        max-height: 4rem;
     }
 
     .tag {

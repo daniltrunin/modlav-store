@@ -26,7 +26,6 @@ export default function CardListItem({title, tag, price, sizes, color, image}) {
             </div>
 
             <div className={styles.details}>
-
                 <div className={styles.heading}>
                     <h1 className={styles.title}>{title}</h1>
                     <div className={styles['price-wrapper']}>
@@ -37,13 +36,13 @@ export default function CardListItem({title, tag, price, sizes, color, image}) {
 
 
                 <div className={styles['size-wrapper']}>
-                    <span>Размер:</span> {sizes.join(', ')}
+                    <span className={styles['size-wrapper__name']}>Размер:</span>
+                    <span className={styles['size-wrapper__list']}>{sizes.join(', ')}</span>
                 </div>
 
                 <div className={styles['color-wrapper']}>
                     <span>Цвет:</span> {color}
                 </div>
-
             </div>
         </div>
     )

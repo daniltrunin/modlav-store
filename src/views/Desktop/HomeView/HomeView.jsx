@@ -12,7 +12,7 @@ export default function HomeView() {
     const offset = useSelector((state) => state.content.offset);
     const loading = useRef(false);
     const containerRef = useRef(null);
-    const LIMIT = 20;
+    const LIMIT = 10;
 
     useEffect(() => {
         document.title = "MOD LAV | HOME";

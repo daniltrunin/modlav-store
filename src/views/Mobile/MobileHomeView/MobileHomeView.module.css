@@ -4,8 +4,7 @@
 'header'
 'toggles'
 'filters'
-'content'
-'footer';
+'content';
     height: 100vh;
     grid-template-columns: 1fr;
     grid-auto-rows: auto auto auto 1fr auto;
