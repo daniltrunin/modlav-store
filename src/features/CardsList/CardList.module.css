@@ -7,3 +7,14 @@
     column-gap: 2rem;
     row-gap: 2rem;
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+
+        padding: 0 1.2rem;
+    }
+}

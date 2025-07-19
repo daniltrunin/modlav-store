@@ -38,7 +38,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: auto;
 
     border: 0.1rem solid #ccc;
 
@@ -51,8 +51,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 1.5rem;
 
     padding: 0.6rem 1rem;
+
+    width: auto;
 
     font-size: 1.4rem;
     font-weight: 400;

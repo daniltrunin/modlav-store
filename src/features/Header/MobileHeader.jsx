@@ -14,47 +14,43 @@ export default function MobileHeader() {
 
     return (
         <>
-
-
-            <>
-                {IsBurgerOpen ? (
-                    <div className={styles['burger-open-active']}>
-                        <div onClick={() => setIsBurgerOpen(!IsBurgerOpen)} className={styles['close-burger']}>Закрыть</div>
-                        <nav className={styles['burger-controls']}>
-                            <div className={styles['controls-item']}>
-                                <img src={search} alt={'Иконка поиска'}/>
-                            </div>
-                            <div className={styles['controls-item']}>
-                                <img src={profile} alt={'Иконка профиля'}/>
-                            </div>
-                            <div className={styles['controls-item']}>
-                                <img src={favorites} alt={'Иконка избранных'}/>
-                                <span className={styles.counter}>{favoritesCount}</span>
-                            </div>
-                            <div className={styles['controls-item']}>
-                                <img src={shoppingCart} alt={'Иконка корзины'}/>
-                                <span className={styles.counter}>0</span>
-                            </div>
-                        </nav>
+            {IsBurgerOpen ? (
+                <div className={styles['burger-open-active']}>
+                    <div onClick={() => setIsBurgerOpen(!IsBurgerOpen)} className={styles['close-burger']}>Закрыть</div>
+                    <nav className={styles['burger-controls']}>
+                        <div className={styles['controls-item']}>
+                            <img src={search} alt={'Иконка поиска'}/>
+                        </div>
+                        <div className={styles['controls-item']}>
+                            <img src={profile} alt={'Иконка профиля'}/>
+                        </div>
+                        <div className={styles['controls-item']}>
+                            <img src={favorites} alt={'Иконка избранных'}/>
+                            <span className={styles.counter}>{favoritesCount}</span>
+                        </div>
+                        <div className={styles['controls-item']}>
+                            <img src={shoppingCart} alt={'Иконка корзины'}/>
+                            <span className={styles.counter}>0</span>
+                        </div>
+                    </nav>
+                </div>
+            ) : (
+                <header className={styles.header}>
+                    <div className={styles.logo}>
+                        <MobileLogo/>
                     </div>
-                ) : (
-                    <header className={styles.header}>
-                        <div className={styles.logo}>
-                            <MobileLogo/>
-                        </div>
-                        <div className={styles['mobile-controls']}>
-                            <img className={styles.search} src={search} alt='Поиск'/>
-                            <img
-                                onClick={() => setIsBurgerOpen(!IsBurgerOpen)}
-                                className={styles.burger}
-                                src={burger}
-                                alt='Развернуть меню'
-                                onClick={() => setIsBurgerOpen(true)} // возможно, ты забыл обработчик
-                            />
-                        </div>
-                    </header>
-                )}
-            </>
+                    <div className={styles['mobile-controls']}>
+                        <img className={styles.search} src={search} alt='Поиск'/>
+                        <img
+                            onClick={() => setIsBurgerOpen(!IsBurgerOpen)}
+                            className={styles.burger}
+                            src={burger}
+                            alt='Развернуть меню'
+                            onClick={() => setIsBurgerOpen(true)} // возможно, ты забыл обработчик
+                        />
+                    </div>
+                </header>
+            )}
         </>
     )
 }

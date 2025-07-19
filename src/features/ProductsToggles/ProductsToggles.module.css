@@ -1,6 +1,19 @@
 .container {
+    grid-area: toggles;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     column-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        overflow-x: scroll;
+
+        height: 5rem;
+
+        padding: 0 1.2rem;
+
+        margin-bottom: 1rem;
+    }
 }
