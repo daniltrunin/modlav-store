@@ -1,10 +1,12 @@
-// import styles from
+import styles from './MobileProductDetailsView.module.css'
 import MobileHeader from '../../../features/Header/MobileHeader.jsx';
+import MobileProductDetails from "../../../features/MobileProductDetails/MobileProductDetails.jsx";
 
 export default function MobileProductDetailsView() {
     return (
-        <>
-            <h1>mobile Product details view desktop</h1>
-        </>
+        <div className={styles.container}>
+            <MobileHeader/>
+            <MobileProductDetails/>
+        </div>
     )
 }
