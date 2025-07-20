@@ -1,0 +1,75 @@
+.container {
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.2rem 1.2rem;
+}
+
+/*Навигация*/
+.navigation {
+    text-align: center;
+
+    margin-bottom: 1.2rem;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+/*Строка в навигации*/
+.navigation ul li {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--font-color-primary);
+
+    cursor: pointer;
+}
+
+/*Контакты*/
+.contacts {
+    margin-top: 1.75rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.35rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    color: var(--font-color-primary);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--font-color-primary);
+}
+
+/*Социальные сети ссылки*/
+.socials {
+    margin-top: 1.2rem;
+
+    display: flex;
+    column-gap: 1.2rem;
+}
+
+/*Разделительная линия*/
+.line {
+    width: calc(100% + 2.4rem);
+    margin-left: -1.2rem;
+
+
+    border-bottom: 0.1rem solid var(--border-line-color);
+}

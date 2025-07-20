@@ -2,13 +2,12 @@
     --font-color-primary: #0D0D0D;
     --font-color-active: #E62F4D;
 
-    --border-line-color: #D6D6D6;
-
     --background-color-hover: rgb(239, 239, 239);
 
     --background-color-option: #F2F2F2;
 
     --background-color-primary: #E62F4D;
+    --background-color-primary-hover: #df405a;
 
     --toggle-background-color-enabled: #01d301;
     --toggle-background-color-disabled: white;
@@ -22,4 +21,20 @@
     --background-color-favorites-button-inactive: #E62F4D;
 
     --background-color-favorites-button-hover: rgba(230, 47, 77, 0.77);
+
+    /*Формы*/
+    --input-background-color: #F2F2F2;
+    --input-font-color: #0D0D0D;
+    --input-font-color-placeholder: #828282;
+
+    /*Кнопка dumb*/
+    --button-font-color-details-primary: #F2F2F2;
+    --button-background-details-color-primary: #E62F4D;
+    --button-background-details-color-primary-hover: #df405a;
+
+    /*Разделительная линия*/
+    --border-line-color: #D6D6D6;
+
+    /*Ссылки на социальные сети footer*/
+    --background-color-socials: #E62F4D;
 }

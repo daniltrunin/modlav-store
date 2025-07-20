@@ -10,7 +10,8 @@ export default function CardsList() {
             {
                 products.length > 0 ?
                     (products.map((product) => (
-                        <CardListItem key={product.id} title={product.title} tag='NEW' price={product.price}
+                        <CardListItem key={product.id} id={product.id} title={product.title} tag='NEW'
+                                      price={product.price}
                                       sizes={['42-44', '46-48', '50-52', '54-56']} color='Бордовый'
                                       image={product.images[0]}/>
                     )))

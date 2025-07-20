@@ -1,0 +1,59 @@
+.container {
+    grid-area: newsletter;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3.2rem 1.2rem 0 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+
+    width: 100%;
+}
+
+/*Лейбл*/
+label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+
+    width: 100%;
+}
+
+/*Имя лейбла*/
+label span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+/*Инпута*/
+label input {
+    border: none;
+
+    background-color: var(--input-background-color);
+
+    padding: 1.6rem;
+
+    color: var(--input-font-color);
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    &::placeholder {
+        color: var(--input-font-color-placeholder);
+    }
+}
+
+/*Разделительная линия*/
+.line {
+    width: calc(100% + 2.4rem);
+    margin-left: -1.2rem;
+
+
+    border-bottom: 0.1rem solid var(--border-line-color);
+}

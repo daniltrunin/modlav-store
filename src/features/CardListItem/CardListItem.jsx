@@ -1,25 +1,32 @@
 import styles from './CardListItem.module.css'
 import {useState} from "react";
 import {useDispatch} from "react-redux";
+import {useNavigate} from "react-router-dom";
 import {toggleFavorite} from '../Header/HeaderSlice.js'
 import favorites from '../../assets/icons/FavoritesButton.svg'
 
-export default function CardListItem({title, tag, price, sizes, color, image}) {
+export default function CardListItem({id, title, tag, price, sizes, color, image}) {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const [isActive, setIsActive] = useState(false)
 
-    const handleClick = () => {
+    const handleFavoriteClick = (e) => {
+        e.stopPropagation()
         setIsActive((!isActive));
         dispatch(toggleFavorite(!isActive))
     }
 
+    const handleCardClick = () => {
+        navigate(`/product-details/${id}`)
+    }
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container} onClick={handleCardClick}>
 
             <div className={styles['image-wrapper']}>
                 <img className={styles.image} src={image} alt='Изображение товара'/>
-                <img onClick={handleClick}
+                <img onClick={(e) => handleFavoriteClick(e)}
                      className={`${styles['favorites-button']} ${isActive ? styles.active : ''}`}
                      src={favorites}
                      alt='Иконка добавить в избранное'/>

@@ -1,0 +1,31 @@
+.container {
+    grid-area: ads;
+
+    width: 100%;
+
+    padding: 0rem 1.2rem 0rem 1.2rem;
+}
+
+.advertisment-text {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    font-family: 'Berold';
+    color: var(--font-color-primary);
+
+    text-align: center;
+
+    padding: 6.4rem 0rem 1.6rem 0rem;
+}
+
+.advertisment-text span {
+    color: #E62F4D;
+}
+
+.line {
+    width: calc(100% + 2.4rem);
+    margin-left: -1.2rem;
+
+
+    border-bottom: 0.1rem solid var(--border-line-color);
+}

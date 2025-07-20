@@ -1,0 +1,25 @@
+.button {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 120%;
+
+    padding: 2rem 6.3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    border: none;
+
+    transition: background-color 0.3s;
+
+    color: var(--button-font-color);
+    background-color: var(--button-bg-color);
+
+
+    &:hover {
+        background-color: var(--button-bg-hover-color);
+    }
+}
