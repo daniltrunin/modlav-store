@@ -1,40 +1,44 @@
 :root {
-    --font-color-primary: #0D0D0D;
-    --font-color-active: #E62F4D;
+  /* Шрифт */
+  --font-color-primary: #0d0d0d;
+  --font-color-active: #e62f4d;
 
-    --background-color-hover: rgb(239, 239, 239);
+  /* Опшнс в фильтрах на главной */
+  --background-color-option: #f2f2f2;
 
-    --background-color-option: #F2F2F2;
+  /* Задний фон */
+  --background-color-primary: #e62f4d;
+  --background-color-primary-hover: #df405a;
+  --background-color-hover: rgb(239, 239, 239);
 
-    --background-color-primary: #E62F4D;
-    --background-color-primary-hover: #df405a;
+  /* Переключатель  разделов*/
+  --toggle-background-color-enabled: #01d301;
+  --toggle-background-color-disabled: white;
+  --toggle-dot-color-enabled: white;
+  --toggle-dot-color-disabled: #828282;
 
-    --toggle-background-color-enabled: #01d301;
-    --toggle-background-color-disabled: white;
-    --toggle-dot-color-enabled: white;
-    --toggle-dot-color-disabled: #828282;
+  /* Тэг на карточке товара */
+  --tag-font-color: white;
+  --tag-background-color-new: #e62f4d;
 
-    --tag-font-color: white;
-    --tag-background-color-new: #E62F4D;
+  /* Кнопка добавить в избранное  */
+  --background-color-favorites-button-active: #01d301;
+  --background-color-favorites-button-inactive: #e62f4d;
+  --background-color-favorites-button-hover: rgba(230, 47, 77, 0.77);
 
-    --background-color-favorites-button-active: #01d301;
-    --background-color-favorites-button-inactive: #E62F4D;
+  /*Формы*/
+  --input-background-color: #f2f2f2;
+  --input-font-color: #0d0d0d;
+  --input-font-color-placeholder: #828282;
 
-    --background-color-favorites-button-hover: rgba(230, 47, 77, 0.77);
+  /*Кнопка dumb*/
+  --button-font-color-details-primary: #f2f2f2;
+  --button-background-details-color-primary: #e62f4d;
+  --button-background-details-color-primary-hover: #df405a;
 
-    /*Формы*/
-    --input-background-color: #F2F2F2;
-    --input-font-color: #0D0D0D;
-    --input-font-color-placeholder: #828282;
+  /*Разделительная линия*/
+  --border-line-color: #d6d6d6;
 
-    /*Кнопка dumb*/
-    --button-font-color-details-primary: #F2F2F2;
-    --button-background-details-color-primary: #E62F4D;
-    --button-background-details-color-primary-hover: #df405a;
-
-    /*Разделительная линия*/
-    --border-line-color: #D6D6D6;
-
-    /*Ссылки на социальные сети footer*/
-    --background-color-socials: #E62F4D;
+  /*Ссылки на социальные сети footer*/
+  --background-color-socials: #e62f4d;
 }
